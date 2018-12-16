@@ -1,2 +1,2 @@
 // JupyterLab does not have `$`
-var $ = require('jquery');
+var $ = typeof jQuery !== 'undefined' ? jQuery : require('jquery');
