@@ -3,7 +3,7 @@
 [![CDNJS](https://img.shields.io/cdnjs/v/3Dmol.svg)](https://cdnjs.com/libraries/3Dmol)
 
 3Dmol.js is an object-oriented, webGL based JavaScript library for online molecular visualization - No Java required!
-Since 3Dmol.js is licensed under the permissive BSD open-source license, you are free to use it any any project, 
+Since 3Dmol.js is licensed under the permissive BSD open-source license, you are free to use it any any project,
 as long the code is properly acknowledged and [cited](http://dx.doi.org/10.1093/bioinformatics/btu829).
 With 3Dmol.js, you can add beautifully rendered molecular visualizations to your web applications.  Features include
  * support for pdb, sdf, mol2, xyz, and cube formats
@@ -14,10 +14,10 @@ With 3Dmol.js, you can add beautifully rendered molecular visualizations to your
  * clickable interactivity with molecular data
  * geometric shapes including spheres and arrows
 
-See the [documentation](http://3dmol.csb.pitt.edu/doc/index.html) to learn how to use 3Dmol.js as a hosted viewer, embeddable viewer, or as a 
+See the [documentation](http://3dmol.csb.pitt.edu/doc/index.html) to learn how to use 3Dmol.js as a hosted viewer, embeddable viewer, or as a
 component of a larger application.
 ## Examples
-	
+
 #### PDB
 We support the use of both PDB queries as well as PDB files.
 
@@ -45,9 +45,9 @@ We also support the use of surfaces that are asynchronously loaded and support d
 viewer.addSurface($3Dmol.SurfaceType.VDW, {
     opacity:0.85,
     voldata: new $3Dmol.VolumeData(volumedata, "cube"),
-    volscheme: new $3Dmol.Gradient.ROYGB(range[1],range[0]) 
-},{});              
-        
+    volscheme: new $3Dmol.Gradient.ROYGB(range[1],range[0])
+},{});
+
 ```
 
 #### Shapes
@@ -81,6 +81,7 @@ In order to install grunt you simply need to use npm.
 Then you are ready to build the program.
 
 	cd 3Dmol.js
+    npm install
     grunt build
 
 This will build the program and allow you to access the completely built file at 3Dmol.js/build/3Dmol-pre.js.
@@ -90,7 +91,7 @@ Please check out our documentation at http://3dmol.csb.pitt.edu/doc/index.html w
 
 ## Contact
 
-Please address any questions or concerns to [dkoes@pitt.edu](mailto:dkoes+3dmol@pitt.edu).  
+Please address any questions or concerns to [dkoes@pitt.edu](mailto:dkoes+3dmol@pitt.edu).
 You may also [submit an issue](https://github.com/3dmol/3Dmol.js/issues) on github.
 
 ## Citing
@@ -100,4 +101,3 @@ If you use 3Dmol.js, please cite our [Bioinformatics paper](http://bioinformatic
 ## Funding
 
 3DMol.js is funded through R01GM108340 from the National Institute of General Medical Sciences. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institute of General Medical Sciences or the National Institutes of Health.
-
