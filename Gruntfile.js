@@ -196,7 +196,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-closure-compiler');
     grunt.loadNpmTasks('grunt-shell');
-    grunt.loadNpmTasks('grunt-node-inspector');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
 };
