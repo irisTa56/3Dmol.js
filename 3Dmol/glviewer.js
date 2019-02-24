@@ -1108,7 +1108,7 @@ $3Dmol.GLViewer = (function() {
          */
         function getModelList(sel) {
             var ms = []
-            if (typeof sel.model === "undefined") {
+            if (typeof sel === 'undefined' || typeof sel.model === "undefined") {
                 for (i = 0; i < models.length; i++) {
                     if (models[i])
                         ms.push(models[i]);
@@ -2824,10 +2824,12 @@ $3Dmol.GLViewer = (function() {
          */
         this.exportVRML = function() {
             var savedmodelGroup = modelGroup;
+            applyToModels("removegl",modelGroup); //cleanup
             modelGroup = new $3Dmol.Object3D();
             //rendering with plain mesh
             this.render(null, {supportsImposters: false, supportsAIA: false, regen: true});
             var ret = '#VRML V2.0 utf8\n' + modelGroup.vrml() + '\n';
+            applyToModels("removegl",modelGroup); //cleanup
             modelGroup = savedmodelGroup;
             return ret;
         }
